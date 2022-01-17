@@ -1,0 +1,75 @@
+body {
+  background: chocolate;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Basic Styles */
+
+/* Progress bar */
+.progress__bar__wrapp {
+  display: flex;
+}
+
+.progress__bar {
+  margin: 40px;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.progress__bar__outer {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #fff;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+.progress__bar__inner {
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #799b94;
+}
+
+.progress__bar__time {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+}
+
+.progress__bar__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress__bar circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 10px;
+  stroke-dasharray: 315;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+}
+
+.progress__bar__text {
+  padding: 10px 0;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: center;
+}

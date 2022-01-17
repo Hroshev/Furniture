@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Furniture</title>
+</head>
+
+<body>
+    <!-- progress__bar -->
+    <div class="container">
+        <div class="progress__bar__wrapp">
+            <!-- Days -->
+            <div class="progress__bar">
+                <div class="progress__bar__outer">
+                    <div class="progress__bar__inner">
+                        <div class="progress__bar__time" id="days">
+                        </div>
+                    </div>
+                </div>
+                <svg class="progress__bar__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+                    height="100%">
+                    <circle class="days" cx="60" cy="60" r="50" />
+                </svg>
+                <p class="progress__bar__text">Days</p>
+            </div>
+            <!-- Hours -->
+            <div class="progress__bar">
+                <div class="progress__bar__outer">
+                    <div class="progress__bar__inner">
+                        <div class="progress__bar__time" id="hours">
+                        </div>
+                    </div>
+                </div>
+                <svg class="progress__bar__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+                    height="100%">
+                    <circle class="hours" cx="60" cy="60" r="50" />
+                </svg>
+                <p class="progress__bar__text">Hours</p>
+            </div>
+            <!-- Minutes -->
+            <div class="progress__bar">
+                <div class="progress__bar__outer">
+                    <div class="progress__bar__inner">
+                        <div class="progress__bar__time" id="minutes">
+                        </div>
+                    </div>
+                </div>
+                <svg class="progress__bar__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+                    height="100%">
+                    <circle class="minutes" cx="60" cy="60" r="50" />
+                </svg>
+                <p class="progress__bar__text">Minutes</p>
+            </div>
+            <!-- Seconds -->
+            <div class="progress__bar">
+                <div class="progress__bar__outer">
+                    <div class="progress__bar__inner">
+                        <div class="progress__bar__time" id="seconds">
+                        </div>
+                    </div>
+                </div>
+                <svg class="progress__bar__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+                    height="100%">
+                    <circle class="seconds" cx="60" cy="60" r="50" />
+                </svg>
+                <p class="progress__bar__text">Seconds</p>
+            </div>
+        </div>
+
+
+
+        <div countdown="60"></div>
+    </div>
+    <script src="js/circleProgressBar.js"></script>
+</body>
+
+</html>
