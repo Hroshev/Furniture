@@ -1,46 +1,8 @@
-
-// Вперед отчет
-
-// function currentTime() {
-//     const ct = new Date();
-//     const days = ct.getDate();
-//     const hours = ct.getHours();
-//     const minutes = ct.getMinutes();
-//     const seconds = ct.getSeconds();
-//     document.getElementById("days").innerHTML = '<p>' + days + '<p>';
-//     document.getElementById("hours").innerHTML = '<p>' + hours + '<p>';
-//     document.getElementById("minutes").innerHTML = '<p>' + minutes + '<p>';
-//     document.getElementById("seconds").innerHTML = '<p>' + seconds + '<p>';
-
-//     // circle progress bar
-
-        // // Hours
-        // let circleHours = document.querySelectorAll(".hours");
-        // for (let hour of circleHours) {
-        //     hour.style.strokeDashoffset = (315 / 24) * hours;
-        // }
-
-        // // Minutes
-        // let circleMinutes = document.querySelectorAll(".minutes");
-        // for (let min of circleMinutes) {
-        //     min.style.strokeDashoffset = Math.round((315 / 60) * minutes);
-        // }
-
-        // // Seconds
-        // let circleSeconds = document.querySelectorAll(".seconds");
-        // for (let sec of circleSeconds) {
-        //     sec.style.strokeDashoffset = Math.round((315 / 60) * seconds);
-        // }
-// }
-// setInterval(currentTime, 1000);
-
-
-
 // <----Обратный отчет----->
 
 document.addEventListener('DOMContentLoaded', function () {
     // конечная дата, например (2022.01.17)
-    const deadline = (function (y, m, d) { return new Date(y, m - 1, d); })(2022, 01, 19);
+    const deadline = (function (y, m, d) { return new Date(y, m - 1, d); })(2022, 06, 02);
     // id таймера
     let timerId = null;
     // склонение числительных
@@ -68,18 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
         //Days
         let circleDays = document.querySelectorAll(".days");
         for (let day of circleDays) {
-            day.style.strokeDashoffset = days;
-
-            const ct = new Date();
-            const dayr = ct.getDate();
-            // console.log(dayr);
-            console.log (Math.floor((315 * days) / 100 ));
+            if (days >= 315) {
+                day.style.strokeDashoffset = 315;
+            } else {
+                day.style.strokeDashoffset = days;
+            }
         }
 
         // Hours
         let circleHours = document.querySelectorAll(".hours");
         for (let hour of circleHours) {
-            hour.style.strokeDashoffset = (315 / 24) * hours;
+            hour.style.strokeDashoffset = Math.round((315 / 24) * hours);
         }
 
         // Minutes
@@ -93,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let sec of circleSeconds) {
             sec.style.strokeDashoffset = Math.round((315 / 60) * seconds);
         }
-
     }
     // получаем элементы, содержащие компоненты даты
     const $days = document.getElementById("days");
@@ -105,3 +65,39 @@ document.addEventListener('DOMContentLoaded', function () {
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
 });
+
+
+
+// <----Отчет вперед----->
+
+// function currentTime() {
+//     const ct = new Date();
+//     const days = ct.getDate();
+//     const hours = ct.getHours();
+//     const minutes = ct.getMinutes();
+//     const seconds = ct.getSeconds();
+//     document.getElementById("days").innerHTML = '<p>' + days + '<p>';
+//     document.getElementById("hours").innerHTML = '<p>' + hours + '<p>';
+//     document.getElementById("minutes").innerHTML = '<p>' + minutes + '<p>';
+//     document.getElementById("seconds").innerHTML = '<p>' + seconds + '<p>';
+
+//     // circle progress bar
+//     // Hours
+//     let circleHours = document.querySelectorAll(".hours");
+//     for (let hour of circleHours) {
+//         hour.style.strokeDashoffset = Math.round((315 / 24) * hours);
+//     }
+
+//     // Minutes
+//     let circleMinutes = document.querySelectorAll(".minutes");
+//     for (let min of circleMinutes) {
+//         min.style.strokeDashoffset = Math.round((315 / 60) * minutes);
+//     }
+
+//     // Seconds
+//     let circleSeconds = document.querySelectorAll(".seconds");
+//     for (let sec of circleSeconds) {
+//         sec.style.strokeDashoffset = Math.round((315 / 60) * seconds);
+//     }
+// }
+// setInterval(currentTime, 1000);

@@ -1,20 +1,127 @@
 body {
-  background: chocolate;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #34383d;
 }
 
 /* Container */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding: 0 15px;
+  max-width: 1680px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 /* Basic Styles */
+.title {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cda861;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 11px 41px;
+  color: #34383d;
+  background-color: #cda861;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  text-transform: capitalize;
+  transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #a38a57ce;
+}
+
+/* About Us */
+.about {
+  position: relative;
+  max-width: 1600px;
+  margin: 80px auto;
+}
+
+.about__position {
+  position: absolute;
+  bottom: -80px;
+  left: -50px;
+}
+
+.about__wrap {
+  border-radius: 50px;
+  background: #cda8611a;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about__inner__content {
+  max-width: 513px;
+}
+
+.about__inner__content h1 {
+  font-size: 76px;
+  border: none;
+}
+
+.about__inner__content p {
+  padding: 30px 0 24px;
+}
+
+/* Special deals */
+.special__deals {
+  position: relative;
+  margin: 80px auto;
+}
+
+.special__deals__position__up {
+  position: absolute;
+  top: -30px;
+  right: 100px;
+}
+
+.special__deals__position__down {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
 
 /* Progress bar */
+.progress__bar__content {
+  max-width: 1520px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../img/sofa.png) 0 0 / contain no-repeat;
+  background-size: 100% 100%;
+  height: calc(420px + 360 * ((100vw - 320px) / (1680 - 320)));
+}
+
+.progress__bar__content h2 {
+  margin-top: 60px;
+  border: none;
+  color: #000000;
+}
+
+.progress__bar__content a {
+  margin-top: 35px;
+}
+
 .progress__bar__wrapp {
   display: flex;
+  justify-content: center;
 }
 
 .progress__bar {
@@ -45,6 +152,7 @@ body {
 }
 
 .progress__bar__time {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #000000;
@@ -66,10 +174,88 @@ body {
 }
 
 .progress__bar__text {
+  font-family: "Montserrat", sans-serif;
   padding: 10px 0;
   font-size: 16px;
-  font-style: italic;
   font-weight: 600;
-  letter-spacing: 0em;
+  color: #000000;
   text-align: center;
+}
+
+/* Features */
+.features {
+  margin: 80px auto;
+  text-align: center;
+  position: relative;
+}
+
+.features__position {
+  position: absolute;
+  top: 20px;
+  right: 96%;
+}
+
+.features img {
+  margin-bottom: -40px;
+}
+
+.features__inner {
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #cda86130;
+  border-radius: 50px;
+}
+
+/* Whats People Say`s */
+.comments {
+  text-align: center;
+  position: relative;
+  background: #f5eee1;
+}
+
+.comments h2 {
+  padding-top: 80px;
+}
+
+.comments__position {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.comments__position__inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.comments__inner {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.comments__inner__box {
+  position: relative;
+  width: 540px;
+  text-align: center;
+  background: #f8f7f7;
+  box-shadow: 0px 2px 18px 0px #00000026;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.comments__inner__box img {
+  position: absolute;
+  top: -50px;
+  right: 220px;
+}
+
+.comments__inner__box p{
+  margin-top: 108px;
+  width: 450px;
+  font-size: 18px;
 }
