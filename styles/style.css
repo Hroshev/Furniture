@@ -44,6 +44,26 @@ body {
   background-color: #a38a57ce;
 }
 
+.logo {
+  padding: 11px 48px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #34383d;
+  transition: background-color 0.2s linear;
+}
+
+.logo:hover {
+  background-color: #34383dcb;
+}
+
+/* Header */
+.header {
+  background: url(../img/backgroundHeader.png) 0 0 / contain no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
 /* About Us */
 .about {
   position: relative;
@@ -255,22 +275,158 @@ body {
   transform: translateX(-50%);
 }
 
-.comments__inner__box p{
+.comments__inner__box p {
   max-width: 410px;
   margin: 110px auto 50px;
   font-size: 18px;
 }
 
-.comments__inner__box h3{
+.comments__inner__box h3 {
   font-weight: 700;
   font-size: 22px;
   color: #000;
 }
 
-.comments__inner__box span{
+.comments__inner__box span {
   margin-bottom: 50px;
   display: inline-block;
   font-size: 20px;
   color: #000;
 }
 
+/* Subscribe */
+.subscribe {
+  position: relative;
+  background-color: #f5eee1;
+}
+
+.subscribe__positionUp {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.subscribe__positionDown {
+  position: absolute;
+  bottom: 0;
+  left: 93%;
+}
+
+.subscribe__background {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url(../img/backgroundSubscribe.png) 0 0 / contain no-repeat;
+  background-size: 100% 100%;
+  height: calc(420px + 360 * ((100vw - 320px) / (1680 - 320)));
+}
+
+.subscribe__content {
+  display: inline-block;
+  margin: 140px 0 0 130px;
+}
+
+.subscribe__content p {
+  text-align: center;
+  margin: 20px 0 80px;
+}
+
+.subscribe__content form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 150px;
+  padding: 10px 12px;
+}
+
+.subscribe__content form input[type="email"] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000;
+}
+
+.subscribe__content form input:focus {
+  background-color: transparent;
+}
+
+.subscribe__content form input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+/* Footer */
+.footer {
+  padding: 80px;
+  background-color: #cda861;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__inner h2 {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+
+.footer__inner__logo {
+  max-width: 610px;
+}
+
+.footer__inner__logo p {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.footer__inner__logo__social a {
+  margin-right: 10px;
+}
+
+.footer__inner__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.footer__inner__wrap ul {
+  padding-left: 30px;
+}
+
+.footer__inner__wrap li {
+  list-style-type: disc;
+  margin-top: 20px;
+}
+
+.footer__inner__wrap button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #34383d;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: color 0.2s linear;
+}
+
+.footer__inner__wrap button:hover {
+  color: #34383d85;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  background-color: #34383d;
+}
+
+.copyright h3 {
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #cda861;
+}
