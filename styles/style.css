@@ -64,6 +64,34 @@ body {
   height: 100vh;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heder__inner__tel {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+
+.heder__inner__tel a {
+  position: relative;
+}
+
+.heder__inner__tel a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/headphone.svg") center no-repeat;
+  /* width: 40px;
+  height: 40px; */
+  top: 0;
+  left: 0;
+}
+
 /* About Us */
 .about {
   position: relative;
