@@ -1,0 +1,543 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #34383d;
+}
+
+/* Container */
+
+.container {
+  width: 100%;
+  max-width: 1680px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Basic Styles */
+
+.title {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cda861;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 11px 41px;
+  color: #34383d;
+  background-color: #cda861;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  text-transform: capitalize;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #a38a57ce;
+}
+
+.logo {
+  padding: 11px 48px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #34383d;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.logo:hover {
+  background-color: #34383dcb;
+}
+
+/* Header */
+
+.header {
+  background: url("../img/backgroundHeader.png") 0 0/contain no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heder__inner__tel {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+}
+
+.heder__inner__tel a {
+  position: relative;
+}
+
+.heder__inner__tel a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/headphone.svg") center no-repeat;
+  /* width: 40px;
+  height: 40px; */
+  top: 0;
+  left: 0;
+}
+
+/* About Us */
+
+.about {
+  position: relative;
+  max-width: 1600px;
+  margin: 80px auto;
+}
+
+.about__position {
+  position: absolute;
+  bottom: -80px;
+  left: -50px;
+}
+
+.about__wrap {
+  border-radius: 50px;
+  background: #cda8611a;
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__inner__content {
+  max-width: 513px;
+}
+
+.about__inner__content h1 {
+  font-size: 76px;
+  border: none;
+}
+
+.about__inner__content p {
+  padding: 30px 0 24px;
+}
+
+/* Special deals */
+
+.special__deals {
+  position: relative;
+  margin: 80px auto;
+}
+
+.special__deals__position__up {
+  position: absolute;
+  top: -30px;
+  right: 100px;
+}
+
+.special__deals__position__down {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+
+/* Progress bar */
+
+.progress__bar__content {
+  max-width: 1520px;
+  margin: 0 auto;
+  text-align: center;
+  background: url("../img/sofa.png") 0 0/contain no-repeat;
+  background-size: 100% 100%;
+  height: calc(420px + 360 * (100vw - 320px) / 1360);
+}
+
+.progress__bar__content h2 {
+  margin-top: 60px;
+  border: none;
+  color: #000000;
+}
+
+.progress__bar__content a {
+  margin-top: 35px;
+}
+
+.progress__bar__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.progress__bar {
+  margin: 40px;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.progress__bar__outer {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #fff;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+.progress__bar__inner {
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #799b94;
+}
+
+.progress__bar__time {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+}
+
+.progress__bar__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress__bar circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 10px;
+  stroke-dasharray: 315;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+}
+
+.progress__bar__text {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+
+/* Features */
+
+.features {
+  margin: 80px auto;
+  text-align: center;
+  position: relative;
+}
+
+.features__position {
+  position: absolute;
+  top: 20px;
+  right: 96%;
+}
+
+.features img {
+  margin-bottom: -40px;
+}
+
+.features__inner {
+  padding: 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #cda86130;
+  border-radius: 50px;
+}
+
+/* Whats People Say`s */
+
+.comments {
+  text-align: center;
+  position: relative;
+  background: #f5eee1;
+}
+
+.comments h2 {
+  padding-top: 80px;
+}
+
+.comments__position {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.comments__position__inside {
+  position: absolute;
+  top: 200px;
+  left: 380px;
+}
+
+.comments__inner {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments__inner__box {
+  position: relative;
+  width: 470px;
+  text-align: center;
+  background: #f8f7f7;
+  -webkit-box-shadow: 0px 2px 18px 0px #00000026;
+          box-shadow: 0px 2px 18px 0px #00000026;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.comments__inner__box img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.comments__inner__box p {
+  max-width: 410px;
+  margin: 110px auto 50px;
+  font-size: 18px;
+}
+
+.comments__inner__box h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+}
+
+.comments__inner__box span {
+  margin-bottom: 50px;
+  display: inline-block;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Featured Products */
+
+/* Subscribe */
+
+.subscribe {
+  position: relative;
+  background-color: #f5eee1;
+}
+
+.subscribe__positionUp {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.subscribe__positionDown {
+  position: absolute;
+  bottom: 0;
+  left: 93%;
+}
+
+.subscribe__background {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url(../img/backgroundSubscribe.png) 0 0/contain no-repeat;
+  background-size: 100% 100%;
+  height: calc(420px + 360 * (100vw - 320px) / 1360);
+}
+
+.subscribe__content {
+  display: inline-block;
+  margin: 140px 0 0 130px;
+}
+
+.subscribe__content p {
+  text-align: center;
+  margin: 20px 0 80px;
+}
+
+.subscribe__content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 150px;
+  padding: 10px 12px;
+}
+
+.subscribe__content form input[type=email] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000;
+}
+
+.subscribe__content form input:focus {
+  background-color: transparent;
+}
+
+.subscribe__content form input[type=submit] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 80px;
+  background-color: #cda861;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.footer__inner h2 {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+
+.footer__inner__logo {
+  max-width: 610px;
+}
+
+.footer__inner__logo p {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.footer__inner__logo__social a {
+  margin-right: 10px;
+}
+
+.footer__inner__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+.footer__inner__wrap ul {
+  padding-left: 30px;
+}
+
+.footer__inner__wrap li {
+  list-style-type: disc;
+  margin-top: 20px;
+}
+
+.footer__inner__wrap button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #34383d;
+  text-transform: uppercase;
+  background-color: transparent;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.footer__inner__wrap button:hover {
+  color: #34383d85;
+}
+
+/* Copyright */
+
+.copyright {
+  text-align: center;
+  background-color: #34383d;
+}
+
+.copyright h3 {
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #cda861;
+}
