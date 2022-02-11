@@ -15,6 +15,12 @@ body {
 }
 
 /* Basic Styles */
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
@@ -32,6 +38,24 @@ body {
   display: inline-block;
   font-weight: 700;
   padding: 11px 41px;
+  color: #34383d;
+  background-color: #cda861;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  text-transform: capitalize;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #a38a57ce;
+  }
+}
+
+.btn__min {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 9px 32px;
   color: #34383d;
   background-color: #cda861;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
@@ -276,7 +300,7 @@ body {
 .comments__position__inside {
   position: absolute;
   top: 200px;
-  left: 380px;
+  left: 0;
 }
 
 .comments__inner {
@@ -323,6 +347,62 @@ body {
 }
 
 /* Featured Products */
+.featured__content{
+  max-width: 1360px;
+  margin: 80px auto;
+  text-align: center;
+
+  .subtitle{
+    margin: 20px 0 30px;
+  }
+}
+
+.featured__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 2vw;
+
+  li {
+    text-align: left;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  h3 {
+    margin: 30px 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.inner__wrap__price {
+  i {
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 10px;
+
+    span{
+      color: #34383d;
+      text-decoration: none;
+    }
+  }
+}
+
+.products__special {
+  color: #cda861;
+  text-decoration: line-through;
+}
+
+.products__avaliable{
+  pointer-events: none;
+  opacity: 0.5;
+}
 
 /* Subscribe */
 .subscribe {
@@ -339,7 +419,7 @@ body {
 .subscribe__positionDown {
   position: absolute;
   bottom: 0;
-  left: 93%;
+  right: 0;
 }
 
 .subscribe__background {

@@ -1,81 +1,123 @@
 const cardsProduct = [
-    {
-        isAvaliable: true,
-        imgUrl: 'img/featuredProducts/1.png',
-        title: 'Wooden Table-Chair',
-        text: 'You don’t have and a tablechair. Shop with 40% discount !',
-        price: 1299,
-        rating: '3',
-        isSpecial: true
-    },
-    {
-        isAvaliable: true,
-        imgUrl: 'img/featuredProducts/2.png',
-        title: 'Lorem',
-        text: 'Test text',
-        price: 809,
-        rating: '5',
-        isSpecial: true
-    },
+  {
+    isAvaliable: false,
+    imgUrl: "img/featuredProducts/1.png",
+    title: "Wooden Table-Chair",
+    text: "You don’t have and a tablechair. Shop with 40% discount !",
+    price: 1299,
+    specialPrice: 1199,
+    rating: "★★★",
+    isSpecial: true,
+  },
+  {
+    isAvaliable: true,
+    imgUrl: "img/featuredProducts/2.png",
+    title: "Wooden Table-Chair",
+    text: "You don’t have and a tablechair. Shop with 40% discount !",
+    price: 1599,
+    specialPrice: 1399,
+    rating: "★★★★",
+    isSpecial: false,
+  },
+  {
+    isAvaliable: true,
+    imgUrl: "img/featuredProducts/3.png",
+    title: "Wooden Table-Chair",
+    text: "You don’t have and a tablechair. Shop with 40% discount !",
+    price: 1399,
+    specialPrice: 1099,
+    rating: "★★",
+    isSpecial: true,
+  },
+  {
+    isAvaliable: true,
+    imgUrl: "img/featuredProducts/4.png",
+    title: "Wooden Table-Chair",
+    text: "You don’t have and a tablechair. Shop with 40% discount !",
+    price: 1499,
+    specialPrice: 1399,
+    rating: "★★★",
+    isSpecial: false,
+  },
+  {
+    isAvaliable: true,
+    imgUrl: "img/featuredProducts/5.png",
+    title: "Wooden Table-Chair",
+    text: "You don’t have and a tablechair. Shop with 40% discount !",
+    price: 1299,
+    specialPrice: 1199,
+    rating: "★★★",
+    isSpecial: true,
+  },
+  {
+    isAvaliable: true,
+    imgUrl: "img/featuredProducts/6.png",
+    title: "Wooden Table-Chair",
+    text: "You don’t have and a tablechair. Shop with 40% discount !",
+    price: 1199,
+    specialPrice: 1099,
+    rating: "★★★",
+    isSpecial: false,
+  },
 ];
 
-const makeElement = function(tagName, className, text){
-    const element = document.createElement(tagName);
-    element.classList.add(className);
-    if(text) {
-        element.textContent = text;
-    }
-    return element;
+const makeElement = function (tagName, className, text) {
+  const element = document.createElement(tagName);
+
+  text ? (element.textContent = text) : "";
+  className ? element.classList.add(className) : "";
+
+  return element;
 };
 
-const createCard = function(product) {
-    const listItem = makeElement('li', 'product');
+const createCard = function (product) {
+  const listItem = makeElement("li");
 
-    const picture = makeElement('img', 'testClass');
-    picture.src = product.imgUrl;
-    listItem.appendChild(picture);
+  const picture = makeElement("img");
+  picture.src = product.imgUrl;
+  listItem.appendChild(picture);
 
-    const title = makeElement('h3', 'testClass', product.title);
-    listItem.appendChild(title);
+  const title = makeElement("h3", "", product.title);
+  listItem.appendChild(title);
 
-    const text = makeElement('p', 'testClass', product.text);
-    listItem.appendChild(text);
+  const text = makeElement("h4", "", product.text);
+  listItem.appendChild(text);
 
-    const wrap = makeElement('div', 'inner');
-    listItem.appendChild(wrap);
+  const inner = makeElement("div", "inner");
+  listItem.appendChild(inner);
 
-    const price = makeElement('p', 'testClass', product.price);
-    wrap.appendChild(price);
+  const innerWrap = makeElement("div", "inner__wrap");
+  inner.appendChild(innerWrap);
 
-    const button = makeElement('a', 'btn', 'Shop Now');
-    button.href = '#';
-    wrap.appendChild(button);
+  const innerWrapPrice = makeElement("div", "inner__wrap__price");
+  innerWrap.appendChild(innerWrapPrice);
 
-    const star = makeElement('img', 'imgClass');
-    star.src = 'img/featuredProducts/star.png';
-    listItem.appendChild(star);
+  const price = makeElement("i", "", "$" + product.price);
+  innerWrapPrice.appendChild(price);
 
+  const star = makeElement("p", "", product.rating);
+  innerWrap.appendChild(star);
 
+  const button = makeElement("a", "btn__min");
+  button.href = "#";
+  !product.isAvaliable ? button.textContent = "Sold" : button.textContent = "Shop Now";
+  inner.appendChild(button);
 
-    // const availabilityClass = 'product--available';
-    // if (!product.isAvailable) {
-    //     availabilityClass = 'product--unavailable';
-    // }
-    // listItem.classList.add(availabilityClass);
+  if (product.isSpecial) {
+    price.classList.add("products__special");
+    const specialPrice = makeElement("span", "", "$" + product.specialPrice);
+    innerWrapPrice.appendChild(specialPrice);
+  }
 
-    // if (product.isSpecial) {
-    //     listItem.classList.add('product--special');
-    //     var specialPrice = makeElement('p', 'product__special-price', product.specialPrice);
-    //     listItem.appendChild(specialPrice);
-    // }
+  !product.isAvaliable ? listItem.classList.add("products__avaliable") : "";
 
-    return listItem;
-}
+  return listItem;
+};
 
 //Перебор массива
-const cardList = document.querySelector('.featured__products');
+const cardList = document.querySelector(".featured__products");
 
 for (let i = 0; i < cardsProduct.length; i++) {
-    const cardItem = createCard(cardsProduct[i]);
-    cardList.appendChild(cardItem);
+  const cardItem = createCard(cardsProduct[i]);
+  cardList.appendChild(cardItem);
 }
