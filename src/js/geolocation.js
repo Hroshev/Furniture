@@ -8,7 +8,7 @@ for (let geolocation of geolocations) {
         if (this.readyState == 4 && this.status == 200) {
             var json = JSON.parse(this.responseText);
 
-            geolocation.innerHTML = json.region;
+            geolocation.innerHTML = json.country;
 
         }
     };
