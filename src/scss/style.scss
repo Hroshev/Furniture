@@ -280,6 +280,55 @@ body {
   border-radius: 50px;
 }
 
+/* Blog */
+.blog{
+  margin: 80px auto;
+  position: relative;
+  text-align: center;
+}
+
+.blog__position{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blog__positionUp{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blog__wrap{
+  background: url("@img/blog/backgrundBlog.png") center no-repeat;
+
+}
+
+.blog__position__absolute{
+
+}
+
+
+.imdesc {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative
+}
+.imdesc img {
+  vertical-align: middle;
+}
+.imdesc p {
+  text-align: center;
+  background: #fc0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px;
+  border-radius: 50px;
+}
+
 /* Whats People Say`s */
 .comments {
   text-align: center;
