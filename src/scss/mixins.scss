@@ -1,0 +1,31 @@
+$mq-xxl: 1400px !default;
+$mq-xl:1200px !default;
+$mq-lg: 992px !default;
+$mq-md: 768px !default;
+$mq-sm: 576px !default;
+
+@mixin _xxl {
+    @media (max-width: $mq-xxl) {
+      @content;
+    }
+  }
+  @mixin _xl {
+    @media (max-width: $mq-xl) {
+      @content;
+    }
+  }
+  @mixin _lg {
+    @media (max-width: $mq-lg) {
+      @content;
+    }
+  }
+  @mixin _md {
+    @media (max-width: $mq-md) {
+      @content;
+    }
+  }
+  @mixin _sm {
+    @media (max-width: $mq-sm) {
+      @content;
+    }
+  }
