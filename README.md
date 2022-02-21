@@ -13,3 +13,5 @@ I use:
 -imgmin
 -webp
 ...
+
+I need to focus JS. Otherwise, I'm happy with the result. 
