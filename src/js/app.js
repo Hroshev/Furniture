@@ -7,15 +7,35 @@ import "./modules/featureProducts.js";
 import "./modules/date.js";
 import "./modules/modalWindow.js";
 
-
-import Swiper from 'swiper/bundle';
+import Swiper from "swiper/bundle";
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
-  slidesPerGroup: 1,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+
+    700: {
+      slidesPerView: 2,
+    },
+
+    900: {
+      slidesPerView: 3,
+    },
+
+    1200: {
+      slidesPerView: 4,
+    },
+
+    1500: {
+      slidesPerView: 5,
+    },
   },
 });

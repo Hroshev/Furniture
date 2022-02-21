@@ -34,7 +34,7 @@ body {
   text-transform: uppercase;
   border-bottom: 2px solid #cda861;
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -304,24 +304,26 @@ body {
   button {
     margin-right: 25px;
   }
+}
 
-  a {
-    font-size: 20px;
-    margin-right: 25px;
-    color: #34383d;
+.nav__button {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #34383d;
+  background-color: transparent;
+  cursor: pointer;
 
-    @media (max-width: 992px) {
-      margin-top: 25px;
-    }
+  @media (max-width: 992px) {
+    margin-top: 25px;
+  }
 
-    &:hover {
-      color: #34383d9d;
-      border-bottom: 3px solid #cda861;
-    }
+  &:hover {
+    color: #34383d9d;
+    border-bottom: 3px solid #cda861;
+  }
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -333,7 +335,7 @@ body {
     font-size: 66px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    
+
     @media (max-width: 768px) {
       font-size: 40px;
       max-width: 350px;
@@ -360,6 +362,10 @@ body {
   position: relative;
   max-width: 1600px;
   margin: 80px auto;
+
+  @media (max-width: 768px) {
+    margin: 40px auto;
+  }
 }
 
 .about__position {
@@ -419,6 +425,10 @@ body {
   text-align: center;
   margin: 80px auto;
 
+  @media (max-width: 768px) {
+    margin: 40px auto;
+  }
+
   p {
     margin: 20px 0 30px;
   }
@@ -432,12 +442,11 @@ body {
 }
 
 .swiper {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
-  padding: 10px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -617,6 +626,10 @@ body {
   margin: 80px auto;
   text-align: center;
   position: relative;
+
+  @media (max-width: 768px) {
+    margin: 40px auto;
+  }
 }
 
 .features__position {
@@ -653,6 +666,10 @@ body {
   margin: 80px auto;
   position: relative;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 40px auto;
+  }
 
   p {
     margin: 20px 0 30px;
@@ -770,6 +787,10 @@ body {
   position: relative;
   background: #f5eee1;
   padding: 80px 0;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 .comments__position {
@@ -838,6 +859,10 @@ body {
 .featured {
   position: relative;
   margin: 80px auto;
+
+  @media (max-width: 768px) {
+    margin: 40px auto;
+  }
 }
 
 .featured__position {
@@ -931,6 +956,10 @@ body {
   background-color: #f5eee1;
   padding: 80px 0;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 .subscribe__positionUp {
@@ -974,15 +1003,10 @@ body {
   }
 
   @media (max-width: 768px) {
-    max-width: 80%;
-    top: 60px;
+    max-width: 70%;
+    top: 30px;
     left: 15px;
     text-align: left;
-  }
-
-  @media (max-width: 768px) {
-    background-size: auto 100%;
-    background-position: 75% 25%;
   }
 
   p {
@@ -1005,6 +1029,7 @@ body {
   @media (max-width: 768px) {
     background-color: transparent;
     box-shadow: none;
+    max-width: 340px;
     display: block;
     padding: 0;
   }
@@ -1018,8 +1043,8 @@ body {
     @media (max-width: 768px) {
       background-color: #fff;
       margin-bottom: 20px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 50px;
+      font-size: 18px;
       padding: 10px;
     }
   }
@@ -1031,6 +1056,10 @@ body {
   input[type="submit"] {
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -1038,6 +1067,10 @@ body {
 .footer {
   padding: 80px;
   background-color: #cda861;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 .footer__inner {
@@ -1046,17 +1079,29 @@ body {
   align-items: center;
   width: 100%;
 
+  @media (max-width: 1200px) {
+    display: block;
+  }
+
   h2 {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 26px;
     font-weight: 700;
     border-bottom: 2px solid #fff;
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
   }
 }
 
 .footer__inner__logo {
   max-width: 610px;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 
   p {
     margin: 20px 0;
@@ -1072,10 +1117,12 @@ body {
 .footer__inner__wrap {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
 
-  @media (max-width: 1400px) {
-    width: 45%;
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-evenly;
   }
 
   ul {
@@ -1085,6 +1132,10 @@ body {
   li {
     list-style-type: disc;
     margin-top: 20px;
+
+    @media (max-width: 576px) {
+      margin-top: 5px;
+    }
   }
 
   button {
@@ -1094,6 +1145,10 @@ body {
     text-transform: uppercase;
     background-color: transparent;
     transition: color 0.2s linear;
+
+    @media (max-width: 576px) {
+      font-size: 18px;
+    }
 
     &:hover {
       color: #34383d85;

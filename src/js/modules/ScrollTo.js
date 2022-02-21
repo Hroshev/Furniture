@@ -1,6 +1,6 @@
 const home = document.getElementById("home");
 home.onclick = () => {
-  const box = document.querySelector(".header");
+  let box = document.querySelector(".header");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -9,7 +9,7 @@ home.onclick = () => {
 
 const footerHome = document.getElementById("footerHome");
 footerHome.onclick = () => {
-  const box = document.querySelector(".header");
+  let box = document.querySelector(".header");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -18,7 +18,7 @@ footerHome.onclick = () => {
 
 const shop = document.getElementById("shop");
 shop.onclick = () => {
-  const box = document.querySelector(".productSell");
+  let box = document.querySelector(".productSell");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -27,7 +27,7 @@ shop.onclick = () => {
 
 const blog = document.getElementById("blog");
 blog.onclick = () => {
-  const box = document.querySelector(".blog");
+  let box = document.querySelector(".blog");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -36,7 +36,7 @@ blog.onclick = () => {
 
 const footerblog = document.getElementById("footerblog");
 footerblog.onclick = () => {
-  const box = document.querySelector(".blog");
+  let box = document.querySelector(".blog");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -45,7 +45,7 @@ footerblog.onclick = () => {
 
 const aboutUs = document.getElementById("aboutUs");
 aboutUs.onclick = () => {
-  const box = document.querySelector(".about");
+  let box = document.querySelector(".about");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -54,7 +54,7 @@ aboutUs.onclick = () => {
 
 const footerAboutUs = document.getElementById("footerAboutUs");
 footerAboutUs.onclick = () => {
-  const box = document.querySelector(".about");
+  let box = document.querySelector(".about");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -63,7 +63,7 @@ footerAboutUs.onclick = () => {
 
 const product = document.getElementById("product");
 product.onclick = () => {
-  const box = document.querySelector(".featured");
+  let box = document.querySelector(".featured");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
@@ -72,7 +72,7 @@ product.onclick = () => {
 
 const footerProduct = document.getElementById("footerProduct");
 footerProduct.onclick = () => {
-  const box = document.querySelector(".featured");
+  let box = document.querySelector(".featured");
   window.scrollTo({
     top: box.offsetTop,
     behavior: "smooth",
