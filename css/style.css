@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;
-
-700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;SS700&family=Roboto:wght@400;500;700&display=swap");
 
 * {
   padding: 0;
@@ -846,10 +844,6 @@ body {
   z-index: 1;
 }
 
-.about__inner img:first-child {
-  max-width: 50%;
-}
-
 .about__inner__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1632,6 +1626,11 @@ body {
     background-position: 25% 75%;
   }
 
+  .about__inner {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+
   .blog__wrap {
     grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
     grid-gap: 3vw;
@@ -1813,10 +1812,6 @@ body {
 
   .about {
     margin: 40px auto;
-  }
-
-  .about__inner img:first-child {
-    display: none;
   }
 
   .productSell {
