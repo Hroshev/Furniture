@@ -382,12 +382,8 @@ body {
   border-radius: 50px;
   background: #cda8611a;
   z-index: 1;
-
-  img:first-child {
-    max-width: 50%;
-    @media (max-width: 768px) {
-      display: none;
-    }
+  @media (max-width: 1200px) {
+    flex-wrap: wrap-reverse;
   }
 }
 

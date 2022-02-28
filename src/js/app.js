@@ -1,6 +1,5 @@
 import "./modules/burger.js";
 import "./modules/ScrollTo.js";
-import "./modules/geolocation.js";
 import "./modules/productSell.js";
 import "./modules/circleProgressBar.js";
 import "./modules/featureProducts.js";
