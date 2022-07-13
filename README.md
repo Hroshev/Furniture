@@ -14,4 +14,5 @@ I use:
 -webp
 ...
 
-I need to focus JS. Otherwise, I'm happy with the result. 
+I need to focus JS. Otherwise, I'm happy with the result.
+The website has modal windows, a progress bar, a burger menu, and navigation. Dynamic post output via JavaScript. The site is adapted to any size device
